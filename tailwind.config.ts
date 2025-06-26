@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors';
 
 const config: Config = {
   content: [
@@ -7,6 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     colors: {
       transparent: 'transparent',
@@ -31,8 +32,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
         fadeIn: {
